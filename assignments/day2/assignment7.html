@@ -1,0 +1,20 @@
+<!doctype>
+<html>
+	<head>
+		<title>Text Update</title>
+		
+	</head>
+	<body>
+		<p>Initial paragraph is </p>
+		<p>Hello I am Asif</p>
+		<p>The Updated Paragraph</p>
+		<p><span id="t1" class="letter"> Hello </span> I am <span id="t2" class="letter">Asif</span></p>
+		<button type="button" onclick="changeText()">Click to Update Text</button>
+		<script>
+			function changeText() {
+				document.getElementById('t2').innerHTML="Asif patan";
+			}
+		</script>
+
+	</body>
+</html>
