@@ -1,0 +1,29 @@
+<!doctype>
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h1>Radio Buttons</h1>
+		<form>
+		<label for="gender">gender</label>
+		<input type="radio" id="gender" name="gender" value="male"/>male
+		<input type="radio" id="gender" name="gender" value="female"/>female
+		<button onclick="readData()">submit</button>
+	</form>	
+	<p id="result"></p>
+	<script>
+		function readData() {
+			// body...
+			var a=document.getElementById('gender').value;
+			for(i=0;i<a.length;i++) {
+					if(a[i].checked)
+						alert('Male');
+					else
+						alert('Female');
+				}
+			}
+	</script>
+	</body>
+	</html>

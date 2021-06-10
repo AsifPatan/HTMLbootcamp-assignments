@@ -1,0 +1,31 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h1>CheckBox</h1>
+	<input type="checkbox" id="cricket" value="cricket" />cricket
+	<input type="checkbox" id="football" value="football" />football
+	<button onclick="readData()">submit</button>
+	<p id="result"></p>
+	<script>
+		function readData() {
+			// body...
+			var cricket=document.getElementById('cricket');
+			var football=document.getElementById('football');
+			var res;
+			console.log(cricket.checked,football.checked);
+			if(cricket.checked==true&&football.checked==true){
+				res='cricket,football';
+			}
+			else if(cricket.checked==false&&football.checked==true){
+				res='football only';
+			}else if(cricket.checked==true&&football.checked==false){
+				res='cricket only';
+			}else{
+				res="none";
+			}
+			document.getElementById('result').innerHTML=res;
+		}
+	</script>

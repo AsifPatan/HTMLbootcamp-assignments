@@ -1,0 +1,30 @@
+<!doctype>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+		<label>Enter a Fruit</label>
+		<input type="text" id="fav" list="cplayers" >
+		<datalist id="cplayers">
+			<option value="Apple"/>
+			<option value="Bannana"/>
+			<option value="Mango"/>
+			<option value="lemon"/>
+			<option value="Pineapple"/>
+			<option value="Custardapple"/>
+			<option value="Promogranate"/>
+			<option value="lemon"/>
+			<option value="Sapota"/>
+		</datalist>
+		<button onclick="readData()">Submit</button>
+		<p id="result"></p>
+		<script>
+			function readData() {
+				// body...
+				var fav=document.getElementById('fav').value;
+				document.getElementById('result').innerHTML=fav;
+			}
+		</script>
+</body>
+</html>
